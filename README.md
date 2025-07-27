@@ -50,7 +50,7 @@ Challenge_1B/
 ├── README.md
 ├── approach_explanation.md
 ├── main.py                   
-├──persona_job.json
+├── persona_job.json
 ```
 ## Note:
 Place your persona/job JSON file in the root directory with the name test_persona_job.json.
