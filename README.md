@@ -54,7 +54,7 @@ Challenge_1B/
 ```
 ## Note:
 Place your persona/job JSON file in the root directory with the name test_persona_job.json.
-The program will read it from /app/test_persona_job.json inside the container.
+The program will read it from /app/persona_job.json inside the container.
 
 ## Performance
 - Processes 3-10 documents in under 60 seconds
