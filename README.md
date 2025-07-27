@@ -39,6 +39,16 @@ Run (Linux/macOS):
 ```bash
 docker run --rm -v %cd%/input:/app/input -v %cd%/output:/app/output --network none doc-intelligence:v1
 ```
+Folder Structure
+```bash
+Challenge_1B/
+├── Dockerfile
+├── requirements.txt
+├── README.md
+├── approach_explanation.md
+├── main.py                   
+├── test_persona_job.json
+```
 Performance
 - Processes 3-10 documents in under 60 seconds
 - Works offline, CPU-only
