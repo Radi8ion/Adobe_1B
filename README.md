@@ -105,3 +105,48 @@ The program will read it from /app/persona_job.json inside the container.
 - metadata with persona/job info
 - Top‑10 ranked sections
 - Generated sub‑sections with refined context
+
+## Output Format
+```bash
+{
+  "metadata": {
+    "persona": "<persona string from persona_job.json>",
+    "job_to_be_done": "<job string from persona_job.json>",
+    "documents": [
+      "sample.json",
+      "another_outline.json"
+    ],
+    "processing_timestamp": "2025-07-28T10:15:00.123456"
+  },
+  "sections": [
+    {
+      "document": "sample.json",
+      "page": 9,
+      "section_title": "Literature Review and Origins",
+      "importance_rank": 1
+    },
+    {
+      "document": "sample.json",
+      "page": 4,
+      "section_title": "Methodology Overview",
+      "importance_rank": 2
+    }
+    // ... up to top 10 sections
+  ],
+  "sub_sections": [
+    {
+      "document": "sample.json",
+      "page": 9,
+      "refined_text": "[Detailed Analysis] From a research perspective, this aspect of Literature Review and Origins involves detailed examination of detailed analysis. This includes methodological considerations, empirical evidence, and analytical frameworks. This content is particularly relevant for systematic literature analysis and comparison with existing research. Building on the foundation of Literature Review and Origins, this refined analysis provides targeted insights.",
+      "importance_rank": 1
+    },
+    {
+      "document": "sample.json",
+      "page": 4,
+      "refined_text": "[Practical Applications] From a research perspective, this aspect of Methodology Overview involves detailed examination of practical applications. This includes methodological considerations, empirical evidence, and analytical frameworks. Building on the foundation of Methodology Overview, this refined analysis provides targeted insights.",
+      "importance_rank": 2
+    }
+    // ... up to top 15 sub-sections
+  ]
+}
+```
