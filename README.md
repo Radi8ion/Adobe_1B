@@ -28,12 +28,12 @@ It is designed to work for any persona or job file provided during evaluation.
 ### Input:
 - One or more JSON files from Challenge 1A placed in input/
 - A persona_job.json file describing the persona and job in the root directory with the format:
-  ```bash
-  {
-  "persona": "PhD Researcher in Cartography",
-  "job_to_be_done": "Prepare a comprehensive literature review focusing on methodologies and origins in modern cartography"
-  }
-  ```
+```bash
+{
+"persona": "PhD Researcher in Cartography",
+"job_to_be_done": "Prepare a comprehensive literature review focusing on methodologies and origins in modern cartography"
+}
+ ```
 
 ## How to Build and Run
 
