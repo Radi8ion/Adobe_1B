@@ -121,6 +121,11 @@ Run (Linux/macOS):
 ```bash
 docker run --rm -v %cd%/input:/app/input -v %cd%/output:/app/output --network none doc-intelligence:v1
 ```
+### 6. View the Output
+After successful execution, you will see a new file created:
+```bash
+output/output.json
+```
 Folder Structure
 ```bash
 Challenge_1B/
